@@ -1,11 +1,13 @@
 import 'package:get/get.dart';
-import 'package:country_phone_code_picker/models/country.dart' as c;
+
+import 'package:country_phone_code_picker/constants/country_codes.dart';
+import 'package:country_phone_code_picker/models/country.dart';
 
 class CountryController extends GetxController {
-  List<c.Country> countryPhoneCodes = [];
+  Country selectedCountry = countries[0];
 
-  @override
-  void onInit() {
-    super.onInit();
+  void updateSelectedCountry(Country country) {
+    selectedCountry = country;
+    update();
   }
 }

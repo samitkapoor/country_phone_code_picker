@@ -1,2 +1,2 @@
 # country_phone_code_picker
-A Dart package that provides a customizable country phone code picker for your Flutter application
+(INCOMPLETE) A Dart package that provides a customizable country phone code picker for your Flutter application

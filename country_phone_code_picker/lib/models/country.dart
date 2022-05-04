@@ -1,6 +1,11 @@
 class Country {
+  //for storing the name of the country
   late String _name;
+
+  //for storing the country code
   late String _countryCode;
+
+  //for storing the country phone code
   late String _phoneCode;
 
   Country(
@@ -12,6 +17,7 @@ class Country {
     _phoneCode = phoneCode;
   }
 
+  //getters
   String get name => _name;
 
   String get code => _countryCode;

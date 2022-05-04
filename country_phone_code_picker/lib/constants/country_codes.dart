@@ -1,5 +1,6 @@
 import 'package:country_phone_code_picker/models/country.dart';
 
+//list of all the country codes provided in the package
 List<Country> countries = [
   Country(
     name: "افغانستان",

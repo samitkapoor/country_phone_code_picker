@@ -11,16 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-<<<<<<< HEAD
 A Flutter package that provides an easy and customizable country phone code picker widget  
-=======
-A Flutter package that provides an easy and customizable country phone code picker widget!<br><br>
-|Picker Widget|Search Bar|
-|:-----------:|:--------:|
-![Screenshot_1651772527](https://user-images.githubusercontent.com/77121931/166982768-e136a1da-105c-4af3-93d3-2a2a87aadf3b.png)|![Screenshot_1651772534](https://user-images.githubusercontent.com/77121931/166982782-7c92aaa2-0acc-4aac-b1e2-2f65714b593e.png)
-
-
->>>>>>> e60e680c1f668934b94c9435457e634dfbced427
 
 ## Features
 

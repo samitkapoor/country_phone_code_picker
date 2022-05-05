@@ -5,3 +5,11 @@
 ## 0.0.2
 
 - Fixing minor errors in previous version
+
+## 0.0.3
+
+- Improving documentation
+
+## 0.0.31
+
+- Improving documentation

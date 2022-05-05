@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import 'package:country_phone_code_picker/constants/country_flag_image.dart';
 import 'package:country_phone_code_picker/controller/search_controller.dart';
+import 'package:country_phone_code_picker/controller/country_controller.dart';
 
 class CountryPhoneCodePickerModalSheet extends StatelessWidget {
   CountryPhoneCodePickerModalSheet({
@@ -87,6 +88,7 @@ class CountryPhoneCodePickerModalSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     searchBarInput = TextEditingController(text: searchBarInitialValue);
     SearchController searchController = Get.put(SearchController());
+    CountryController countryController = Get.find<CountryController>();
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -141,7 +143,12 @@ class CountryPhoneCodePickerModalSheet extends StatelessWidget {
                     itemCount: controller.filteredCountries.length,
                     itemBuilder: (context, index) {
                       return InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          countryController.updateSelectedCountry(
+                              controller.filteredCountries[index]);
+                          searchController.updateQueryList('');
+                          Navigator.pop(context);
+                        },
                         child: Container(
                           margin: const EdgeInsets.symmetric(vertical: 2),
                           height: 30,

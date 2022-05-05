@@ -32,7 +32,6 @@ class CountryPhoneCodePickerModalSheet extends StatelessWidget {
     required this.searchBarInitialValue,
     required this.keyboardType,
     required this.showCursor,
-    super.key,
   });
 
   TextEditingController? searchBarInput;

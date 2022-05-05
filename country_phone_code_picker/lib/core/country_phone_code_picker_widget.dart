@@ -10,7 +10,6 @@ import 'package:country_phone_code_picker/constants/country_codes.dart';
 //the default dropdownwidget for picking the country code
 class CountryPhoneCodePicker extends StatelessWidget {
   CountryPhoneCodePicker({
-    super.key,
     this.height = 45,
     this.width = 80,
     this.backgroundColor = Colors.transparent,
@@ -58,7 +57,6 @@ class CountryPhoneCodePicker extends StatelessWidget {
   });
 
   CountryPhoneCodePicker.withDefaultSelectedCountry({
-    super.key,
     required this.defaultCountryCode,
     this.height = 45,
     this.width = 80,

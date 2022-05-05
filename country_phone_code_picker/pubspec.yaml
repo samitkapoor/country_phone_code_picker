@@ -4,14 +4,14 @@ version: 0.0.1
 homepage: https://github.com/samitkapoor/country_phone_code_picker
 
 environment:
-  sdk: '>=2.10.0 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.1
-  http: ^0.13.4
+  
 
 dev_dependencies:
   flutter_test:

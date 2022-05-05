@@ -3,22 +3,22 @@ import 'package:country_phone_code_picker/models/country.dart';
 //list of all the country codes provided in the package
 List<Country> countries = [
   Country(
-    name: "افغانستان",
+    name: "Afghanistan",
     countryCode: "AF",
     phoneCode: "+93",
   ),
   Country(
-    name: "Åland",
+    name: "Aland Islands",
     countryCode: "AX",
     phoneCode: "+358",
   ),
   Country(
-    name: "Shqipëria",
+    name: "Albania",
     countryCode: "AL",
     phoneCode: "+355",
   ),
   Country(
-    name: "الجزائر",
+    name: "Algeria",
     countryCode: "DZ",
     phoneCode: "+213",
   ),
@@ -58,7 +58,7 @@ List<Country> countries = [
     phoneCode: "+54",
   ),
   Country(
-    name: "Հայաստան",
+    name: "Armenia",
     countryCode: "AM",
     phoneCode: "+374",
   ),
@@ -73,12 +73,12 @@ List<Country> countries = [
     phoneCode: "+61",
   ),
   Country(
-    name: "Österreich",
+    name: "Austria",
     countryCode: "AT",
     phoneCode: "+43",
   ),
   Country(
-    name: "Azərbaycan",
+    name: "Azerbaijan",
     countryCode: "AZ",
     phoneCode: "+994",
   ),
@@ -88,7 +88,7 @@ List<Country> countries = [
     phoneCode: "+1242",
   ),
   Country(
-    name: "‏البحرين",
+    name: "Bahrain",
     countryCode: "BH",
     phoneCode: "+973",
   ),
@@ -103,12 +103,12 @@ List<Country> countries = [
     phoneCode: "+1246",
   ),
   Country(
-    name: "Белару́сь",
+    name: "Belarus",
     countryCode: "BY",
     phoneCode: "+375",
   ),
   Country(
-    name: "België",
+    name: "Belgium",
     countryCode: "BE",
     phoneCode: "+32",
   ),
@@ -118,7 +118,7 @@ List<Country> countries = [
     phoneCode: "+501",
   ),
   Country(
-    name: "Bénin",
+    name: "Benin",
     countryCode: "BJ",
     phoneCode: "+229",
   ),
@@ -128,7 +128,7 @@ List<Country> countries = [
     phoneCode: "+1441",
   ),
   Country(
-    name: "ʼbrug-yul",
+    name: "Bhutan",
     countryCode: "BT",
     phoneCode: "+975",
   ),
@@ -138,7 +138,7 @@ List<Country> countries = [
     phoneCode: "+591",
   ),
   Country(
-    name: "Bosna i Hercegovina",
+    name: "Bosnia and Herzegovina",
     countryCode: "BA",
     phoneCode: "+387",
   ),
@@ -148,12 +148,12 @@ List<Country> countries = [
     phoneCode: "+267",
   ),
   Country(
-    name: "Bouvetøya",
+    name: "Bouvet Island",
     countryCode: "BV",
     phoneCode: "+47",
   ),
   Country(
-    name: "Brasil",
+    name: "Brazil",
     countryCode: "BR",
     phoneCode: "+55",
   ),
@@ -163,12 +163,12 @@ List<Country> countries = [
     phoneCode: "+246",
   ),
   Country(
-    name: "Negara Brunei Darussalam",
+    name: "Brunei",
     countryCode: "BN",
     phoneCode: "+673",
   ),
   Country(
-    name: "България",
+    name: "Bulgaria",
     countryCode: "BG",
     phoneCode: "+359",
   ),
@@ -198,7 +198,7 @@ List<Country> countries = [
     phoneCode: "+1",
   ),
   Country(
-    name: "Cabo Verde",
+    name: "Cape Verde",
     countryCode: "CV",
     phoneCode: "+238",
   ),
@@ -208,12 +208,12 @@ List<Country> countries = [
     phoneCode: "+1345",
   ),
   Country(
-    name: "Ködörösêse tî Bêafrîka",
+    name: "Central African Republic",
     countryCode: "CF",
     phoneCode: "+236",
   ),
   Country(
-    name: "Tchad",
+    name: "Chad",
     countryCode: "TD",
     phoneCode: "+235",
   ),
@@ -223,7 +223,7 @@ List<Country> countries = [
     phoneCode: "+56",
   ),
   Country(
-    name: "中国",
+    name: "China",
     countryCode: "CN",
     phoneCode: "+86",
   ),
@@ -233,7 +233,7 @@ List<Country> countries = [
     phoneCode: "+61",
   ),
   Country(
-    name: "Cocos (Keeling) Islands",
+    name: "Cocos Islands",
     countryCode: "CC",
     phoneCode: "+61",
   ),
@@ -243,17 +243,17 @@ List<Country> countries = [
     phoneCode: "+57",
   ),
   Country(
-    name: "Komori",
+    name: "Comoros",
     countryCode: "KM",
     phoneCode: "+269",
   ),
   Country(
-    name: "République du Congo",
+    name: "Republic of the Congo",
     countryCode: "CG",
     phoneCode: "+242",
   ),
   Country(
-    name: "République démocratique du Congo",
+    name: "Democratic Republic of the Congo",
     countryCode: "CD",
     phoneCode: "+243",
   ),
@@ -268,12 +268,12 @@ List<Country> countries = [
     phoneCode: "+506",
   ),
   Country(
-    name: "Côte d'Ivoire",
+    name: "Ivory Coast",
     countryCode: "CI",
     phoneCode: "+225",
   ),
   Country(
-    name: "Hrvatska",
+    name: "Croatia",
     countryCode: "HR",
     phoneCode: "+385",
   ),
@@ -283,17 +283,17 @@ List<Country> countries = [
     phoneCode: "+53",
   ),
   Country(
-    name: "Κύπρος",
+    name: "Cyprus",
     countryCode: "CY",
     phoneCode: "+357",
   ),
   Country(
-    name: "Česká republika",
+    name: "Czech Republic",
     countryCode: "CZ",
     phoneCode: "+420",
   ),
   Country(
-    name: "Danmark",
+    name: "Denmark",
     countryCode: "DK",
     phoneCode: "+45",
   ),
@@ -308,7 +308,7 @@ List<Country> countries = [
     phoneCode: "+1767",
   ),
   Country(
-    name: "República Dominicana",
+    name: "Dominican Republic",
     countryCode: "DO",
     phoneCode: "+1",
   ),
@@ -318,7 +318,7 @@ List<Country> countries = [
     phoneCode: "+593",
   ),
   Country(
-    name: "مصر‎",
+    name: "Egypt",
     countryCode: "EG",
     phoneCode: "+20",
   ),
@@ -328,22 +328,22 @@ List<Country> countries = [
     phoneCode: "+503",
   ),
   Country(
-    name: "Guinea Ecuatorial",
+    name: "Equatorial Guinea",
     countryCode: "GQ",
     phoneCode: "+240",
   ),
   Country(
-    name: "ኤርትራ",
+    name: "Eritrea",
     countryCode: "ER",
     phoneCode: "+291",
   ),
   Country(
-    name: "Eesti",
+    name: "Estonia",
     countryCode: "EE",
     phoneCode: "+372",
   ),
   Country(
-    name: "ኢትዮጵያ",
+    name: "Ethiopia",
     countryCode: "ET",
     phoneCode: "+251",
   ),
@@ -353,7 +353,7 @@ List<Country> countries = [
     phoneCode: "+500",
   ),
   Country(
-    name: "Føroyar",
+    name: "Faroe Islands",
     countryCode: "FO",
     phoneCode: "+298",
   ),
@@ -363,7 +363,7 @@ List<Country> countries = [
     phoneCode: "+679",
   ),
   Country(
-    name: "Suomi",
+    name: "Finland",
     countryCode: "FI",
     phoneCode: "+358",
   ),
@@ -373,17 +373,17 @@ List<Country> countries = [
     phoneCode: "+33",
   ),
   Country(
-    name: "Guyane française",
+    name: "French Guiana",
     countryCode: "GF",
     phoneCode: "+594",
   ),
   Country(
-    name: "Polynésie française",
+    name: "French Polynesia",
     countryCode: "PF",
     phoneCode: "+689",
   ),
   Country(
-    name: "Territoire des Terres australes et antarctiques fr",
+    name: "French Southern Territories",
     countryCode: "TF",
     phoneCode: "+262",
   ),
@@ -398,12 +398,12 @@ List<Country> countries = [
     phoneCode: "+220",
   ),
   Country(
-    name: "საქართველო",
+    name: "Georgia",
     countryCode: "GE",
     phoneCode: "+995",
   ),
   Country(
-    name: "Deutschland",
+    name: "Germany",
     countryCode: "DE",
     phoneCode: "+49",
   ),
@@ -418,12 +418,12 @@ List<Country> countries = [
     phoneCode: "+350",
   ),
   Country(
-    name: "Ελλάδα",
+    name: "Greece",
     countryCode: "GR",
     phoneCode: "+30",
   ),
   Country(
-    name: "Kalaallit Nunaat",
+    name: "Greenland",
     countryCode: "GL",
     phoneCode: "+299",
   ),
@@ -453,12 +453,12 @@ List<Country> countries = [
     phoneCode: "+44",
   ),
   Country(
-    name: "Guinée",
+    name: "Guinea",
     countryCode: "GN",
     phoneCode: "+224",
   ),
   Country(
-    name: "Guiné-Bissau",
+    name: "Guinea-Bissau",
     countryCode: "GW",
     phoneCode: "+245",
   ),
@@ -468,7 +468,7 @@ List<Country> countries = [
     phoneCode: "+592",
   ),
   Country(
-    name: "Haïti",
+    name: "Haiti",
     countryCode: "HT",
     phoneCode: "+509",
   ),
@@ -478,7 +478,7 @@ List<Country> countries = [
     phoneCode: "+0",
   ),
   Country(
-    name: "Vaticano",
+    name: "Vatican",
     countryCode: "VA",
     phoneCode: "+379",
   ),
@@ -488,22 +488,22 @@ List<Country> countries = [
     phoneCode: "+504",
   ),
   Country(
-    name: "香港",
+    name: "Hong Kong",
     countryCode: "HK",
     phoneCode: "+852",
   ),
   Country(
-    name: "Magyarország",
+    name: "Hungary",
     countryCode: "HU",
     phoneCode: "+36",
   ),
   Country(
-    name: "Ísland",
+    name: "Iceland",
     countryCode: "IS",
     phoneCode: "+354",
   ),
   Country(
-    name: "भारत",
+    name: "India",
     countryCode: "IN",
     phoneCode: "+91",
   ),
@@ -513,17 +513,17 @@ List<Country> countries = [
     phoneCode: "+62",
   ),
   Country(
-    name: "ایران",
+    name: "Iran",
     countryCode: "IR",
     phoneCode: "+98",
   ),
   Country(
-    name: "العراق",
+    name: "Iraq",
     countryCode: "IQ",
     phoneCode: "+964",
   ),
   Country(
-    name: "Éire",
+    name: "Ireland",
     countryCode: "IE",
     phoneCode: "+353",
   ),
@@ -533,12 +533,12 @@ List<Country> countries = [
     phoneCode: "+44",
   ),
   Country(
-    name: "ישראל",
+    name: "Israel",
     countryCode: "IL",
     phoneCode: "+972",
   ),
   Country(
-    name: "Italia",
+    name: "Italy",
     countryCode: "IT",
     phoneCode: "+39",
   ),
@@ -548,7 +548,7 @@ List<Country> countries = [
     phoneCode: "+1876",
   ),
   Country(
-    name: "日本",
+    name: "Japan",
     countryCode: "JP",
     phoneCode: "+81",
   ),
@@ -558,12 +558,12 @@ List<Country> countries = [
     phoneCode: "+44",
   ),
   Country(
-    name: "الأردن",
+    name: "Jordan",
     countryCode: "JO",
     phoneCode: "+962",
   ),
   Country(
-    name: "Қазақстан",
+    name: "Kazakhstan",
     countryCode: "KZ",
     phoneCode: "+7",
   ),
@@ -578,42 +578,42 @@ List<Country> countries = [
     phoneCode: "+686",
   ),
   Country(
-    name: "북한",
+    name: "North Korea",
     countryCode: "KP",
     phoneCode: "+850",
   ),
   Country(
-    name: "대한민국",
+    name: "South Korea",
     countryCode: "KR",
     phoneCode: "+82",
   ),
   Country(
-    name: "Republika e Kosovës",
+    name: "Kosovo",
     countryCode: "XK",
     phoneCode: "+383",
   ),
   Country(
-    name: "الكويت",
+    name: "Kuwait",
     countryCode: "KW",
     phoneCode: "+965",
   ),
   Country(
-    name: "Кыргызстан",
+    name: "Kyrgyzstan",
     countryCode: "KG",
     phoneCode: "+996",
   ),
   Country(
-    name: "ສປປລາວ",
+    name: "Laos",
     countryCode: "LA",
     phoneCode: "+856",
   ),
   Country(
-    name: "Latvija",
+    name: "Latvia",
     countryCode: "LV",
     phoneCode: "+371",
   ),
   Country(
-    name: "لبنان",
+    name: "Lebanon",
     countryCode: "LB",
     phoneCode: "+961",
   ),
@@ -628,7 +628,7 @@ List<Country> countries = [
     phoneCode: "+231",
   ),
   Country(
-    name: "‏ليبيا",
+    name: "Libya",
     countryCode: "LY",
     phoneCode: "+218",
   ),
@@ -638,7 +638,7 @@ List<Country> countries = [
     phoneCode: "+423",
   ),
   Country(
-    name: "Lietuva",
+    name: "Lithuania",
     countryCode: "LT",
     phoneCode: "+370",
   ),
@@ -648,17 +648,17 @@ List<Country> countries = [
     phoneCode: "+352",
   ),
   Country(
-    name: "澳門",
+    name: "Macao",
     countryCode: "MO",
     phoneCode: "+853",
   ),
   Country(
-    name: "Македонија",
+    name: "Macedonia",
     countryCode: "MK",
     phoneCode: "+389",
   ),
   Country(
-    name: "Madagasikara",
+    name: "Madagascar",
     countryCode: "MG",
     phoneCode: "+261",
   ),
@@ -688,7 +688,7 @@ List<Country> countries = [
     phoneCode: "+356",
   ),
   Country(
-    name: "M̧ajeļ",
+    name: "Marshall Islands",
     countryCode: "MH",
     phoneCode: "+692",
   ),
@@ -698,12 +698,12 @@ List<Country> countries = [
     phoneCode: "+596",
   ),
   Country(
-    name: "موريتانيا",
+    name: "Mauritania",
     countryCode: "MR",
     phoneCode: "+222",
   ),
   Country(
-    name: "Maurice",
+    name: "Mauritius",
     countryCode: "MU",
     phoneCode: "+230",
   ),
@@ -713,7 +713,7 @@ List<Country> countries = [
     phoneCode: "+262",
   ),
   Country(
-    name: "México",
+    name: "Mexico",
     countryCode: "MX",
     phoneCode: "+52",
   ),
@@ -733,12 +733,12 @@ List<Country> countries = [
     phoneCode: "+377",
   ),
   Country(
-    name: "Монгол улс",
+    name: "Mongolia",
     countryCode: "MN",
     phoneCode: "+976",
   ),
   Country(
-    name: "Црна Гора",
+    name: "Montenegro",
     countryCode: "ME",
     phoneCode: "+382",
   ),
@@ -748,12 +748,12 @@ List<Country> countries = [
     phoneCode: "+1664",
   ),
   Country(
-    name: "المغرب",
+    name: "Morocco",
     countryCode: "MA",
     phoneCode: "+212",
   ),
   Country(
-    name: "Moçambique",
+    name: "Mozambique",
     countryCode: "MZ",
     phoneCode: "+258",
   ),
@@ -773,22 +773,22 @@ List<Country> countries = [
     phoneCode: "+674",
   ),
   Country(
-    name: "नेपाल",
+    name: "Nepal",
     countryCode: "NP",
     phoneCode: "+977",
   ),
   Country(
-    name: "Nederland",
+    name: "Netherlands",
     countryCode: "NL",
     phoneCode: "+31",
   ),
   Country(
-    name: "Netherlands Antilles",
+    name: "null",
     countryCode: "AN",
     phoneCode: "+599",
   ),
   Country(
-    name: "Nouvelle-Calédonie",
+    name: "New Caledonia",
     countryCode: "NC",
     phoneCode: "+687",
   ),
@@ -813,7 +813,7 @@ List<Country> countries = [
     phoneCode: "+234",
   ),
   Country(
-    name: "Niuē",
+    name: "Niue",
     countryCode: "NU",
     phoneCode: "+683",
   ),
@@ -828,12 +828,12 @@ List<Country> countries = [
     phoneCode: "+1670",
   ),
   Country(
-    name: "Norge",
+    name: "Norway",
     countryCode: "NO",
     phoneCode: "+47",
   ),
   Country(
-    name: "عمان",
+    name: "Oman",
     countryCode: "OM",
     phoneCode: "+968",
   ),
@@ -848,17 +848,17 @@ List<Country> countries = [
     phoneCode: "+680",
   ),
   Country(
-    name: "فلسطين",
+    name: "Palestinian Territory",
     countryCode: "PS",
     phoneCode: "+970",
   ),
   Country(
-    name: "Panamá",
+    name: "Panama",
     countryCode: "PA",
     phoneCode: "+507",
   ),
   Country(
-    name: "Papua Niugini",
+    name: "Papua New Guinea",
     countryCode: "PG",
     phoneCode: "+675",
   ),
@@ -868,22 +868,22 @@ List<Country> countries = [
     phoneCode: "+595",
   ),
   Country(
-    name: "Perú",
+    name: "Peru",
     countryCode: "PE",
     phoneCode: "+51",
   ),
   Country(
-    name: "Pilipinas",
+    name: "Philippines",
     countryCode: "PH",
     phoneCode: "+63",
   ),
   Country(
-    name: "Pitcairn Islands",
+    name: "Pitcairn",
     countryCode: "PN",
     phoneCode: "+64",
   ),
   Country(
-    name: "Polska",
+    name: "Poland",
     countryCode: "PL",
     phoneCode: "+48",
   ),
@@ -903,17 +903,17 @@ List<Country> countries = [
     phoneCode: "+1787",
   ),
   Country(
-    name: "قطر",
+    name: "Qatar",
     countryCode: "QA",
     phoneCode: "+974",
   ),
   Country(
-    name: "România",
+    name: "Romania",
     countryCode: "RO",
     phoneCode: "+40",
   ),
   Country(
-    name: "Россия",
+    name: "Russia",
     countryCode: "RU",
     phoneCode: "+7",
   ),
@@ -923,12 +923,12 @@ List<Country> countries = [
     phoneCode: "+250",
   ),
   Country(
-    name: "La Réunion",
+    name: "Reunion",
     countryCode: "RE",
     phoneCode: "+262",
   ),
   Country(
-    name: "Saint-Barthélemy",
+    name: "Saint Barthelemy",
     countryCode: "BL",
     phoneCode: "+590",
   ),
@@ -948,12 +948,12 @@ List<Country> countries = [
     phoneCode: "+1758",
   ),
   Country(
-    name: "Saint-Martin",
+    name: "Saint Martin",
     countryCode: "MF",
     phoneCode: "+590",
   ),
   Country(
-    name: "Saint-Pierre-et-Miquelon",
+    name: "Saint Pierre and Miquelon",
     countryCode: "PM",
     phoneCode: "+508",
   ),
@@ -973,22 +973,22 @@ List<Country> countries = [
     phoneCode: "+378",
   ),
   Country(
-    name: "São Tomé e Príncipe",
+    name: "Sao Tome and Principe",
     countryCode: "ST",
     phoneCode: "+239",
   ),
   Country(
-    name: "العربية السعودية",
+    name: "Saudi Arabia",
     countryCode: "SA",
     phoneCode: "+966",
   ),
   Country(
-    name: "Sénégal",
+    name: "Senegal",
     countryCode: "SN",
     phoneCode: "+221",
   ),
   Country(
-    name: "Србија",
+    name: "Serbia",
     countryCode: "RS",
     phoneCode: "+381",
   ),
@@ -1008,12 +1008,12 @@ List<Country> countries = [
     phoneCode: "+65",
   ),
   Country(
-    name: "Slovensko",
+    name: "Slovakia",
     countryCode: "SK",
     phoneCode: "+421",
   ),
   Country(
-    name: "Slovenija",
+    name: "Slovenia",
     countryCode: "SI",
     phoneCode: "+386",
   ),
@@ -1023,7 +1023,7 @@ List<Country> countries = [
     phoneCode: "+677",
   ),
   Country(
-    name: "Soomaaliya",
+    name: "Somalia",
     countryCode: "SO",
     phoneCode: "+252",
   ),
@@ -1038,12 +1038,12 @@ List<Country> countries = [
     phoneCode: "+211",
   ),
   Country(
-    name: "South Georgia",
+    name: "South Georgia and the South Sandwich Islands",
     countryCode: "GS",
     phoneCode: "+500",
   ),
   Country(
-    name: "España",
+    name: "Spain",
     countryCode: "ES",
     phoneCode: "+34",
   ),
@@ -1053,17 +1053,17 @@ List<Country> countries = [
     phoneCode: "+94",
   ),
   Country(
-    name: "السودان",
+    name: "Sudan",
     countryCode: "SD",
     phoneCode: "+249",
   ),
   Country(
-    name: "SuricountryName",
+    name: "Suriname",
     countryCode: "SR",
     phoneCode: "+597",
   ),
   Country(
-    name: "Svalbard og Jan Mayen",
+    name: "Svalbard and Jan Mayen",
     countryCode: "SJ",
     phoneCode: "+47",
   ),
@@ -1073,27 +1073,27 @@ List<Country> countries = [
     phoneCode: "+268",
   ),
   Country(
-    name: "Sverige",
+    name: "Sweden",
     countryCode: "SE",
     phoneCode: "+46",
   ),
   Country(
-    name: "Schweiz",
+    name: "Switzerland",
     countryCode: "CH",
     phoneCode: "+41",
   ),
   Country(
-    name: "سوريا",
+    name: "Syria",
     countryCode: "SY",
     phoneCode: "+963",
   ),
   Country(
-    name: "臺灣",
+    name: "Taiwan",
     countryCode: "TW",
     phoneCode: "+886",
   ),
   Country(
-    name: "Тоҷикистон",
+    name: "Tajikistan",
     countryCode: "TJ",
     phoneCode: "+992",
   ),
@@ -1103,12 +1103,12 @@ List<Country> countries = [
     phoneCode: "+255",
   ),
   Country(
-    name: "ประเทศไทย",
+    name: "Thailand",
     countryCode: "TH",
     phoneCode: "+66",
   ),
   Country(
-    name: "Timor-Leste",
+    name: "East Timor",
     countryCode: "TL",
     phoneCode: "+670",
   ),
@@ -1133,17 +1133,17 @@ List<Country> countries = [
     phoneCode: "+1868",
   ),
   Country(
-    name: "تونس",
+    name: "Tunisia",
     countryCode: "TN",
     phoneCode: "+216",
   ),
   Country(
-    name: "Türkiye",
+    name: "Turkey",
     countryCode: "TR",
     phoneCode: "+90",
   ),
   Country(
-    name: "Türkmenistan",
+    name: "Turkmenistan",
     countryCode: "TM",
     phoneCode: "+993",
   ),
@@ -1163,12 +1163,12 @@ List<Country> countries = [
     phoneCode: "+256",
   ),
   Country(
-    name: "Україна",
+    name: "Ukraine",
     countryCode: "UA",
     phoneCode: "+380",
   ),
   Country(
-    name: "دولة الإمارات العربية المتحدة",
+    name: "United Arab Emirates",
     countryCode: "AE",
     phoneCode: "+971",
   ),
@@ -1188,7 +1188,7 @@ List<Country> countries = [
     phoneCode: "+598",
   ),
   Country(
-    name: "O‘zbekiston",
+    name: "Uzbekistan",
     countryCode: "UZ",
     phoneCode: "+998",
   ),
@@ -1203,7 +1203,7 @@ List<Country> countries = [
     phoneCode: "+58",
   ),
   Country(
-    name: "Việt Nam",
+    name: "Vietnam",
     countryCode: "VN",
     phoneCode: "+84",
   ),
@@ -1213,17 +1213,17 @@ List<Country> countries = [
     phoneCode: "+1284",
   ),
   Country(
-    name: "United States Virgin Islands",
+    name: "U.S. Virgin Islands",
     countryCode: "VI",
     phoneCode: "+1340",
   ),
   Country(
-    name: "Wallis et Futuna",
+    name: "Wallis and Futuna",
     countryCode: "WF",
     phoneCode: "+681",
   ),
   Country(
-    name: "اليَمَن",
+    name: "Yemen",
     countryCode: "YE",
     phoneCode: "+967",
   ),

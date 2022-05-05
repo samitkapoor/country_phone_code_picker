@@ -13,3 +13,7 @@
 ## 0.0.31
 
 - Improving documentation
+
+## 0.0.32
+
+- Improved documentation and upgraded sdk version

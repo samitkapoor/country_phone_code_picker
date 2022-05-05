@@ -5,7 +5,9 @@ import 'package:country_phone_code_picker/constants/country_flag_image.dart';
 import 'package:country_phone_code_picker/controller/search_controller.dart';
 import 'package:country_phone_code_picker/controller/country_controller.dart';
 
+// ignore: must_be_immutable
 class CountryPhoneCodePickerModalSheet extends StatelessWidget {
+  // ignore: use_key_in_widget_constructors
   CountryPhoneCodePickerModalSheet({
     required this.searchSheetBackground,
     required this.searchBarLeadingIcon,

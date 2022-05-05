@@ -8,7 +8,9 @@ import 'package:country_phone_code_picker/constants/country_flag_image.dart';
 import 'package:country_phone_code_picker/constants/country_codes.dart';
 
 //the default dropdownwidget for picking the country code
+// ignore: must_be_immutable
 class CountryPhoneCodePicker extends StatelessWidget {
+  // ignore: use_key_in_widget_constructors
   CountryPhoneCodePicker({
     this.height = 45,
     this.width = 80,
@@ -56,6 +58,7 @@ class CountryPhoneCodePicker extends StatelessWidget {
     this.showCursor = true,
   });
 
+  // ignore: use_key_in_widget_constructors
   CountryPhoneCodePicker.withDefaultSelectedCountry({
     required this.defaultCountryCode,
     this.height = 45,

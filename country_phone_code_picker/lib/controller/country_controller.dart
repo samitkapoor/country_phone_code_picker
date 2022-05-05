@@ -7,7 +7,7 @@ import 'package:country_phone_code_picker/models/country.dart';
 class CountryController extends GetxController {
   //this variable will keep the record of the selected country code
   //countries[0] will be the default selected country in the application
-  Country selectedCountry = countries[0];
+  late Country selectedCountry;
 
   String get selectedCountryName => selectedCountry.name;
 

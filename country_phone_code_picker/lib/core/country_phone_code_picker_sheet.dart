@@ -10,6 +10,13 @@ class CountryPhoneCodePickerModalSheet extends StatelessWidget {
     required this.searchSheetBackground,
     required this.searchBarLeadingIcon,
     required this.searchBarHintText,
+    required this.searchBarHintStyle,
+    required this.searchBarLabelText,
+    required this.searchBarLabelStyle,
+    required this.searchBarHelperText,
+    required this.searchBarHelperStyle,
+    required this.searchBarPrefixText,
+    required this.searchBarPrefixStyle,
     required this.searchBarPrefixIcon,
     required this.searchBarContentPadding,
     required this.border,
@@ -37,7 +44,28 @@ class CountryPhoneCodePickerModalSheet extends StatelessWidget {
   Icon searchBarLeadingIcon;
 
   //hint text for search bar
-  String searchBarHintText;
+  String? searchBarHintText;
+
+  //styling for hint text
+  TextStyle searchBarHintStyle;
+
+  //label text for search bar
+  String? searchBarLabelText;
+
+  //styling for label text
+  TextStyle searchBarLabelStyle;
+
+  //helper text for search bar
+  String? searchBarHelperText;
+
+  //styling for helper text
+  TextStyle searchBarHelperStyle;
+
+  //prefix text for search bar
+  String? searchBarPrefixText;
+
+  //styling for prefix text
+  TextStyle searchBarPrefixStyle;
 
   //prefix icon for search bar
   Icon searchBarPrefixIcon;
@@ -113,6 +141,13 @@ class CountryPhoneCodePickerModalSheet extends StatelessWidget {
               },
               decoration: InputDecoration(
                 hintText: searchBarHintText,
+                hintStyle: searchBarHintStyle,
+                labelText: searchBarLabelText,
+                labelStyle: searchBarLabelStyle,
+                helperText: searchBarHelperText,
+                helperStyle: searchBarHelperStyle,
+                prefixText: searchBarPrefixText,
+                prefixStyle: searchBarPrefixStyle,
                 prefixIcon: searchBarPrefixIcon,
                 suffix: IconButton(
                   onPressed: () {

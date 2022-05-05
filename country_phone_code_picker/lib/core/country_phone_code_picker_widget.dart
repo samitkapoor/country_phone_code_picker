@@ -30,7 +30,14 @@ class CountryPhoneCodePicker extends StatelessWidget {
     this.searchSheetBackground = const Color(0xfffafafa),
     this.searchBarLeadingIcon =
         const Icon(Icons.arrow_back_outlined, color: Colors.black),
-    this.searchBarHintText = 'Search by name of the country',
+    this.searchBarHintText,
+    this.searchBarHintStyle = const TextStyle(),
+    this.searchBarLabelText,
+    this.searchBarLabelStyle = const TextStyle(),
+    this.searchBarHelperText,
+    this.searchBarHelperStyle = const TextStyle(),
+    this.searchBarPrefixText,
+    this.searchBarPrefixStyle = const TextStyle(),
     this.searchBarPrefixIcon = const Icon(Icons.search, color: Colors.black),
     this.searchBarContentPadding =
         const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
@@ -72,7 +79,14 @@ class CountryPhoneCodePicker extends StatelessWidget {
     this.searchSheetBackground = const Color(0xfffafafa),
     this.searchBarLeadingIcon =
         const Icon(Icons.arrow_back_outlined, color: Colors.black),
-    this.searchBarHintText = 'Search by name of the country',
+    this.searchBarHintText,
+    this.searchBarHintStyle = const TextStyle(),
+    this.searchBarLabelText,
+    this.searchBarLabelStyle = const TextStyle(),
+    this.searchBarHelperText,
+    this.searchBarHelperStyle = const TextStyle(),
+    this.searchBarPrefixText,
+    this.searchBarPrefixStyle = const TextStyle(),
     this.searchBarPrefixIcon = const Icon(Icons.search, color: Colors.black),
     this.searchBarContentPadding =
         const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
@@ -142,7 +156,28 @@ class CountryPhoneCodePicker extends StatelessWidget {
   Icon searchBarLeadingIcon;
 
   //hint text for search bar
-  String searchBarHintText;
+  String? searchBarHintText;
+
+  //styling for hint text
+  TextStyle searchBarHintStyle;
+
+  //label text for search bar
+  String? searchBarLabelText;
+
+  //styling for label text
+  TextStyle searchBarLabelStyle;
+
+  //helper text for search bar
+  String? searchBarHelperText;
+
+  //styling for helper text
+  TextStyle searchBarHelperStyle;
+
+  //prefix text for search bar
+  String? searchBarPrefixText;
+
+  //styling for prefix text
+  TextStyle searchBarPrefixStyle;
 
   //prefix icon for search bar
   Icon searchBarPrefixIcon;
@@ -202,6 +237,13 @@ class CountryPhoneCodePicker extends StatelessWidget {
               searchSheetBackground: searchSheetBackground,
               searchBarLeadingIcon: searchBarLeadingIcon,
               searchBarHintText: searchBarHintText,
+              searchBarHintStyle: searchBarHintStyle,
+              searchBarLabelText: searchBarLabelText,
+              searchBarLabelStyle: searchBarLabelStyle,
+              searchBarHelperText: searchBarHelperText,
+              searchBarHelperStyle: searchBarHelperStyle,
+              searchBarPrefixText: searchBarPrefixText,
+              searchBarPrefixStyle: searchBarPrefixStyle,
               searchBarPrefixIcon: searchBarPrefixIcon,
               searchBarContentPadding: searchBarContentPadding,
               border: border,

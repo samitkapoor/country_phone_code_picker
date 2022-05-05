@@ -23,6 +23,7 @@ A Flutter package that provides an easy and customizable country phone code pick
 <!-- TODO: List what your package can do. Maybe include images, gifs, or videos. -->
 This package comes with a lot of customization allowing you to build the widget as per your preferences with ease!
 <br>
+
 |All you can set parameters|What they mean|Default|
 |:-------------------------:|:------------:|:-----:|
 |defaultCountryCode|Allows you to set a default/initially selected country|Afghanistan|
@@ -70,12 +71,14 @@ This package comes with a lot of customization allowing you to build the widget 
 
 <!-- TODO: List prerequisites and provide or point to information on how to
 start using the package. -->
+
 Just include this in your pubspec.yaml<br>
+
 ```dart
   country_phone_code_picker: any
 ```
-or run this in your terminal
-<br>
+
+or run this in your terminal<br>
 
 ```dart
   flutter pub add country_phone_code_picker
@@ -90,6 +93,7 @@ or run this in your terminal
 to `/example` folder. -->
 
 To simply get a Country Picker widget, try:
+
 ```dart
 CountryPhoneCodePicker.withDefaultSelectedCountry(
   defaultCountryCode:

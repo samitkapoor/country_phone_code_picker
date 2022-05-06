@@ -17,3 +17,7 @@
 ## 0.0.32
 
 - Improved documentation and upgraded sdk version
+
+## 0.0.33
+
+- Added variables to customize flag's height and width

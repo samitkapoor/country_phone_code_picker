@@ -17,6 +17,8 @@ This package comes with a lot of customization allowing you to build the widget 
 |defaultCountryCode|Allows you to set a default/initially selected country|Afghanistan|
 |height|Height of the picker widget|45|
 |width|Width of the picker widget |80|
+|flagHeight|Height of the flag inside picker widget|35|
+|flagWidth|Width of the flag inside picker widget|50|
 |backgroundColor|Background color of picker widget|Colors.transparent|
 |borderRadius|Control the radius of the curve around the corners of border of the picker widget|15|
 |borderColor|Color of the border of picker widget|Colors.transparent|

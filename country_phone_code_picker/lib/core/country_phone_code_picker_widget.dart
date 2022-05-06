@@ -14,6 +14,8 @@ class CountryPhoneCodePicker extends StatelessWidget {
   CountryPhoneCodePicker({
     this.height = 45,
     this.width = 80,
+    this.flagHeight = 35,
+    this.flagWidth = 50,
     this.backgroundColor = Colors.transparent,
     this.borderRadius = 15,
     this.borderColor = Colors.transparent,
@@ -63,6 +65,8 @@ class CountryPhoneCodePicker extends StatelessWidget {
     required this.defaultCountryCode,
     this.height = 45,
     this.width = 80,
+    this.flagHeight = 35,
+    this.flagWidth = 50,
     this.backgroundColor = Colors.transparent,
     this.borderRadius = 15,
     this.borderColor = Colors.transparent,
@@ -114,6 +118,12 @@ class CountryPhoneCodePicker extends StatelessWidget {
 
   //width of the drop down button widget
   final double width;
+
+  //height of the flag
+  final double flagHeight;
+
+  //width of flag
+  final double flagWidth;
 
   //background color of the drop down widget
   final Color backgroundColor;
@@ -280,8 +290,8 @@ class CountryPhoneCodePicker extends StatelessWidget {
               children: [
                 showFlag == true
                     ? Container(
-                        height: height - 5,
-                        width: height - 5,
+                        height: flagHeight,
+                        width: flagWidth,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           image: DecorationImage(

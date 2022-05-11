@@ -1,10 +1,10 @@
 name: country_phone_code_picker
 description: Flutter Package that provides easy and customizable country picker widget
-version: 0.0.34
+version: 0.0.35
 homepage: https://github.com/samitkapoor/country_phone_code_picker
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.16.2 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:

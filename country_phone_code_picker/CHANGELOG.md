@@ -25,3 +25,7 @@
 ## 0.0.34
 
 - Lowering sdk to upload a stable build
+
+## 0.0.35
+
+- Updating the sdk version

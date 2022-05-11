@@ -21,3 +21,7 @@
 ## 0.0.33
 
 - Added variables to customize flag's height and width
+
+## 0.0.34
+
+- Lowering sdk to upload a stable build

@@ -29,3 +29,7 @@
 ## 0.0.35
 
 - Updating the sdk version
+
+## 0.0.36
+
+- You can now add border radius to the flag image

@@ -33,3 +33,7 @@
 ## 0.0.36
 
 - You can now add border radius to the flag image
+
+## 0.0.37
+
+- Updated README.md

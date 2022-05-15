@@ -21,6 +21,7 @@ This package comes with a lot of customization allowing you to build the widget 
 |flagWidth|Width of the flag inside picker widget|50|
 |backgroundColor|Background color of picker widget|Colors.transparent|
 |borderRadius|Control the radius of the curve around the corners of border of the picker widget|15|
+|flagBorderRadius|Control the radius of the curve around the corners of flag image|5|
 |borderColor|Color of the border of picker widget|Colors.transparent|
 |borderWidth|Width of the border of picker widget|0|
 |contentPadding|Padding inside the picker widget|EdgeInsets.symmetric(horizontal:5, vertical:5)|
@@ -63,7 +64,7 @@ This package comes with a lot of customization allowing you to build the widget 
 Just include this in your pubspec.yaml<br>
 
 ```dart
-  country_phone_code_picker: any
+  country_phone_code_picker: <VERSION>
 ```
 
 or run this in your terminal<br>

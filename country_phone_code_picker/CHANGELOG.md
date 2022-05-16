@@ -40,4 +40,4 @@
 
 ## 0.0.38
 
-- You can now retrive the dat afrom the widget
+- You can now retrive the data from the widget

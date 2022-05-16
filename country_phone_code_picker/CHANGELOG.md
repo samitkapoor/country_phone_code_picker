@@ -41,3 +41,7 @@
 ## 0.0.38
 
 - New widget to display country phone code
+
+## 0.0.39
+ 
+- Improvements in documentation

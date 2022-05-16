@@ -23,8 +23,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
 
-  CountryController countryController = CountryController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,6 +42,7 @@ class MyHomePage extends StatelessWidget {
               style: const TextStyle(fontSize: 16),
               searchBarHintText: 'Search by name',
             ),
+            CountryPhoneCodeWidget(),
           ],
         ),
       ),

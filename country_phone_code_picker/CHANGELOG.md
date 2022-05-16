@@ -37,3 +37,7 @@
 ## 0.0.37
 
 - Updated README.md
+
+## 0.0.38
+
+- You can now retrive the dat afrom the widget

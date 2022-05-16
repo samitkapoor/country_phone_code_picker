@@ -4,8 +4,8 @@ import 'package:get/get.dart';
 import 'package:country_phone_code_picker/controller/country_controller.dart';
 
 // ignore: must_be_immutable
-class CountryPhoneCodeWidget extends StatelessWidget {
-  CountryPhoneCodeWidget({
+class CountryNameWidget extends StatelessWidget {
+  CountryNameWidget({
     Key? key,
     this.height = 0,
     this.width = 0,
@@ -15,9 +15,7 @@ class CountryPhoneCodeWidget extends StatelessWidget {
     this.borderColor = Colors.black,
     this.borderStyle = BorderStyle.solid,
     this.borderWidth = 0,
-    this.textStyle = const TextStyle(
-      fontSize: 24,
-    ),
+    this.textStyle = const TextStyle(fontSize: 18),
   }) : super(key: key);
 
   //height of the widget
@@ -44,29 +42,28 @@ class CountryPhoneCodeWidget extends StatelessWidget {
   //style of the border
   BorderStyle borderStyle;
 
-  //style of the font
-  TextStyle? textStyle;
+  //text style of the widget
+  TextStyle textStyle;
 
   @override
   Widget build(BuildContext context) {
     return GetBuilder<CountryController>(
       builder: (controller) {
         return Container(
-          height: height,
-          width: width,
-          alignment: Alignment.center,
-          padding: padding,
-          decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(borderRadius),
-            border: Border.all(
-              color: borderColor,
-              width: borderWidth,
-              style: borderStyle,
+            height: height,
+            width: width,
+            alignment: Alignment.center,
+            padding: padding,
+            decoration: BoxDecoration(
+              color: color,
+              borderRadius: BorderRadius.circular(borderRadius),
+              border: Border.all(
+                color: borderColor,
+                width: borderWidth,
+                style: borderStyle,
+              ),
             ),
-          ),
-          child: Text(controller.selectedCountryPhoneCode, style: textStyle),
-        );
+            child: Text(controller.selectedCountryName, style: textStyle));
       },
     );
   }

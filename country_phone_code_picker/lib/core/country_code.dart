@@ -4,19 +4,18 @@ import 'package:get/get.dart';
 import 'package:country_phone_code_picker/controller/country_controller.dart';
 
 // ignore: must_be_immutable
-class CountryPhoneCodeWidget extends StatelessWidget {
-  CountryPhoneCodeWidget({
+class CountryCodeWidget extends StatelessWidget {
+  CountryCodeWidget({
     Key? key,
     this.height = 0,
     this.width = 0,
-    this.padding = EdgeInsets.zero,
     this.borderRadius = 0,
     this.color = Colors.transparent,
-    this.borderColor = Colors.black,
+    this.borderColor = Colors.transparent,
     this.borderStyle = BorderStyle.solid,
     this.borderWidth = 0,
     this.textStyle = const TextStyle(
-      fontSize: 24,
+      fontSize: 18,
     ),
   }) : super(key: key);
 
@@ -25,9 +24,6 @@ class CountryPhoneCodeWidget extends StatelessWidget {
 
   //width of the widget
   double width;
-
-  //padding in the widget
-  EdgeInsetsGeometry padding;
 
   //color of the widget
   Color color;
@@ -52,20 +48,16 @@ class CountryPhoneCodeWidget extends StatelessWidget {
     return GetBuilder<CountryController>(
       builder: (controller) {
         return Container(
+          alignment: Alignment.center,
           height: height,
           width: width,
-          alignment: Alignment.center,
-          padding: padding,
           decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.circular(borderRadius),
             border: Border.all(
-              color: borderColor,
-              width: borderWidth,
-              style: borderStyle,
-            ),
+                color: borderColor, width: borderWidth, style: borderStyle),
           ),
-          child: Text(controller.selectedCountryPhoneCode, style: textStyle),
+          child: Text(controller.selectedCountryCode, style: textStyle),
         );
       },
     );

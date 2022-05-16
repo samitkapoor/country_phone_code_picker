@@ -12,6 +12,9 @@ A Flutter package that provides an easy and customizable country phone code pick
 This package comes with a lot of customization allowing you to build the widget as per your preferences with ease!
 <br>
 
+Parameters for CountryPhoneCodePicker Widget 
+<br>
+
 |All you can set parameters|What they mean|Default|
 |:-------------------------:|:------------:|:-----:|
 |defaultCountryCode|Allows you to set a default/initially selected country|Afghanistan|
@@ -57,6 +60,22 @@ This package comes with a lot of customization allowing you to build the widget 
 |keyboardType|Type of input in text field|TextInputType.text|
 |showCursor|Cursor is visible if value is true|true|
 
+<br>
+
+Parameters for specific detail widget
+
+|All you can set parameters|What they mean|Default|
+|:-------------------------:|:------------:|:-----:|
+|height|Allows you to set height to the widget|0|
+|width|Allows you to set width to the widget|0|
+|padding|Padding inside the widget|EdgeInsets.zero|
+|borderRadius|Curve around the corners of the border of widget|0|
+|color|Color of the widget|Colors.transparent|
+|borderColor|Color of the border|Colors.black|
+|borderStyle|Style of the border|BorderStyle.solid|
+|borderWidth|Width of the border|0|
+|textStyle|Style the text inside widget|TextStyle(fontSize: 18)|
+
 
 ## Getting started
 
@@ -90,6 +109,19 @@ CountryPhoneCodePicker.withDefaultSelectedCountry(
   borderColor: Colors.grey,
   style: const TextStyle(fontSize: 16),
   searchBarHintText: 'Search by name',
+),
+```
+
+To display a specific property about the country for example - country code, phone code, name, flag
+
+```dart
+CountryPhoneCodeWidget(
+  height: 30,
+  width: 50,
+  textStyle: const TextStyle(fontSize: 15),
+  borderWidth: 1,
+  borderRadius: 5,
+  borderColor: Colors.black,
 ),
 ```
 

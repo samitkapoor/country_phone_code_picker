@@ -45,3 +45,7 @@
 ## 0.0.39
  
 - Improvements in documentation
+
+## 0.0.40
+
+- Separate customizable widgets to display country code, phone code, flag, name

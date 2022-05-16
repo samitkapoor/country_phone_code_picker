@@ -4,8 +4,8 @@ import 'package:get/get.dart';
 import 'package:country_phone_code_picker/controller/country_controller.dart';
 
 // ignore: must_be_immutable
-class CountryPhoneCodeWidget extends StatelessWidget {
-  CountryPhoneCodeWidget({
+class CountryFlagWidget extends StatelessWidget {
+  CountryFlagWidget({
     Key? key,
     this.height = 0,
     this.width = 0,
@@ -15,9 +15,6 @@ class CountryPhoneCodeWidget extends StatelessWidget {
     this.borderColor = Colors.black,
     this.borderStyle = BorderStyle.solid,
     this.borderWidth = 0,
-    this.textStyle = const TextStyle(
-      fontSize: 24,
-    ),
   }) : super(key: key);
 
   //height of the widget
@@ -44,9 +41,6 @@ class CountryPhoneCodeWidget extends StatelessWidget {
   //style of the border
   BorderStyle borderStyle;
 
-  //style of the font
-  TextStyle? textStyle;
-
   @override
   Widget build(BuildContext context) {
     return GetBuilder<CountryController>(
@@ -64,8 +58,10 @@ class CountryPhoneCodeWidget extends StatelessWidget {
               width: borderWidth,
               style: borderStyle,
             ),
+            image: DecorationImage(
+              image: NetworkImage(controller.selectedCountryFlagUrl),
+            ),
           ),
-          child: Text(controller.selectedCountryPhoneCode, style: textStyle),
         );
       },
     );

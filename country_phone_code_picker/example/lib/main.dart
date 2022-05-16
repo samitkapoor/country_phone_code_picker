@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({super.key});
+  const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,20 +30,50 @@ class MyHomePage extends StatelessWidget {
         title: const Text('Country Phone Code Picker'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            CountryPhoneCodePicker.withDefaultSelectedCountry(
-              defaultCountryCode:
-                  Country(name: 'India', countryCode: 'IN', phoneCode: '+91'),
-              borderRadius: 5,
-              borderWidth: 1,
-              borderColor: Colors.grey,
-              style: const TextStyle(fontSize: 16),
-              searchBarHintText: 'Search by name',
-            ),
-            CountryPhoneCodeWidget(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              CountryPhoneCodePicker.withDefaultSelectedCountry(
+                defaultCountryCode:
+                    Country(name: 'India', countryCode: 'IN', phoneCode: '+91'),
+                borderRadius: 5,
+                borderWidth: 1,
+                borderColor: Colors.grey,
+                style: const TextStyle(fontSize: 16),
+                searchBarHintText: 'Search by name',
+              ),
+              const SizedBox(height: 10),
+              CountryFlagWidget(
+                height: 30,
+                width: 50,
+                borderStyle: BorderStyle.none,
+              ),
+              const SizedBox(height: 10),
+              CountryNameWidget(
+                height: 30,
+                width: 50,
+                borderStyle: BorderStyle.none,
+                textStyle: const TextStyle(fontSize: 15),
+              ),
+              const SizedBox(height: 10),
+              CountryCodeWidget(
+                height: 30,
+                width: 50,
+                textStyle:
+                    const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 10),
+              CountryPhoneCodeWidget(
+                height: 30,
+                width: 50,
+                textStyle: const TextStyle(fontSize: 15),
+                borderWidth: 1,
+                borderRadius: 5,
+                borderColor: Colors.black,
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -49,3 +49,7 @@
 ## 0.0.40
 
 - Separate customizable widgets to display country code, phone code, flag, name
+
+## 0.0.41
+
+- Improved border radius to the flag image

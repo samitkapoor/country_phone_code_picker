@@ -300,6 +300,7 @@ class CountryPhoneCodePicker extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(flagBorderRadius),
                           image: DecorationImage(
+                            fit: BoxFit.cover,
                             image: NetworkImage(
                               countryFlagApi + controller.selectedCountry.code,
                             ),

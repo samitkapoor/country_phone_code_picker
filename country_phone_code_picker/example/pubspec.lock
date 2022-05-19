@@ -49,7 +49,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.40"
+    version: "0.0.41"
   cupertino_icons:
     dependency: "direct main"
     description:

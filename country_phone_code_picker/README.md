@@ -2,8 +2,8 @@
 A Flutter package that provides an easy and customizable country phone code picker widget!<br><br>
 
 <p>
-  <img width=40% src="https://user-images.githubusercontent.com/77121931/168589664-e708d2ec-682d-4a30-af6b-303d9566ec16.gif" />
-  <img width=40% src="https://user-images.githubusercontent.com/77121931/166982782-7c92aaa2-0acc-4aac-b1e2-2f65714b593e.png" />
+  <img width=350 src="https://user-images.githubusercontent.com/77121931/168589664-e708d2ec-682d-4a30-af6b-303d9566ec16.gif" />
+  <img width=350 src="https://user-images.githubusercontent.com/77121931/166982782-7c92aaa2-0acc-4aac-b1e2-2f65714b593e.png" />
 </p>
 
 ## Features

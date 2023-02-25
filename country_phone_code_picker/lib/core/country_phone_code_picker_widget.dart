@@ -9,9 +9,11 @@ import 'package:country_phone_code_picker/constants/country_codes.dart';
 
 //the default dropdownwidget for picking the country code
 // ignore: must_be_immutable
-class CountryPhoneCodePicker extends StatelessWidget {
+class CountryPhoneCodePicker extends StatefulWidget {
+  CountryController countryController;
   // ignore: use_key_in_widget_constructors
   CountryPhoneCodePicker({
+    required this.countryController,
     this.height = 45,
     this.width = 80,
     this.flagHeight = 30,
@@ -63,6 +65,7 @@ class CountryPhoneCodePicker extends StatelessWidget {
 
   // ignore: use_key_in_widget_constructors
   CountryPhoneCodePicker.withDefaultSelectedCountry({
+    required this.countryController,
     required this.defaultCountryCode,
     this.height = 45,
     this.width = 80,
@@ -241,40 +244,44 @@ class CountryPhoneCodePicker extends StatelessWidget {
   bool showCursor;
 
   @override
+  State<CountryPhoneCodePicker> createState() => _CountryPhoneCodePickerState();
+}
+
+class _CountryPhoneCodePickerState extends State<CountryPhoneCodePicker> {
+  @override
   Widget build(BuildContext context) {
-    CountryController countryController = Get.put(CountryController());
-    countryController.updateSelectedCountry(defaultCountryCode);
+    widget.countryController.updateSelectedCountry(widget.defaultCountryCode);
 
     return InkWell(
       onTap: () {
         Navigator.of(context).push(
           MaterialPageRoute<void>(
             builder: (BuildContext context) => CountryPhoneCodePickerModalSheet(
-              searchSheetBackground: searchSheetBackground,
-              searchBarLeadingIcon: searchBarLeadingIcon,
-              searchBarHintText: searchBarHintText,
-              searchBarHintStyle: searchBarHintStyle,
-              searchBarLabelText: searchBarLabelText,
-              searchBarLabelStyle: searchBarLabelStyle,
-              searchBarHelperText: searchBarHelperText,
-              searchBarHelperStyle: searchBarHelperStyle,
-              searchBarPrefixText: searchBarPrefixText,
-              searchBarPrefixStyle: searchBarPrefixStyle,
-              searchBarPrefixIcon: searchBarPrefixIcon,
-              searchBarContentPadding: searchBarContentPadding,
-              border: border,
-              errorBorder: errorBorder,
-              focusedBorder: focusedBorder,
-              disabledBorder: disabledBorder,
-              focusedErrorBorder: focusedErrorBorder,
-              enabledBorder: enabledBorder,
-              searchBarCursorColor: searchBarCursorColor,
-              searchBarCursorHeight: searchBarCursorHeight,
-              searchBarCursorWidth: searchBarCursorWidth,
-              style: style,
-              searchBarInitialValue: searchBarInitialValue,
-              keyboardType: keyboardType,
-              showCursor: showCursor,
+              searchSheetBackground: widget.searchSheetBackground,
+              searchBarLeadingIcon: widget.searchBarLeadingIcon,
+              searchBarHintText: widget.searchBarHintText,
+              searchBarHintStyle: widget.searchBarHintStyle,
+              searchBarLabelText: widget.searchBarLabelText,
+              searchBarLabelStyle: widget.searchBarLabelStyle,
+              searchBarHelperText: widget.searchBarHelperText,
+              searchBarHelperStyle: widget.searchBarHelperStyle,
+              searchBarPrefixText: widget.searchBarPrefixText,
+              searchBarPrefixStyle: widget.searchBarPrefixStyle,
+              searchBarPrefixIcon: widget.searchBarPrefixIcon,
+              searchBarContentPadding: widget.searchBarContentPadding,
+              border: widget.border,
+              errorBorder: widget.errorBorder,
+              focusedBorder: widget.focusedBorder,
+              disabledBorder: widget.disabledBorder,
+              focusedErrorBorder: widget.focusedErrorBorder,
+              enabledBorder: widget.enabledBorder,
+              searchBarCursorColor: widget.searchBarCursorColor,
+              searchBarCursorHeight: widget.searchBarCursorHeight,
+              searchBarCursorWidth: widget.searchBarCursorWidth,
+              style: widget.style,
+              searchBarInitialValue: widget.searchBarInitialValue,
+              keyboardType: widget.keyboardType,
+              showCursor: widget.showCursor,
             ),
           ),
         );
@@ -282,48 +289,50 @@ class CountryPhoneCodePicker extends StatelessWidget {
       child: GetBuilder<CountryController>(
         builder: (controller) {
           return Container(
-            height: height,
-            width: width,
-            padding: contentPadding,
+            height: widget.height,
+            width: widget.width,
+            padding: widget.contentPadding,
             decoration: BoxDecoration(
-              color: backgroundColor,
-              borderRadius: BorderRadius.circular(borderRadius),
-              border: Border.all(color: borderColor, width: borderWidth),
+              color: widget.backgroundColor,
+              borderRadius: BorderRadius.circular(widget.borderRadius),
+              border: Border.all(
+                  color: widget.borderColor, width: widget.borderWidth),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                showFlag == true
+                widget.showFlag == true
                     ? Container(
-                        height: flagHeight,
-                        width: flagWidth,
+                        height: widget.flagHeight,
+                        width: widget.flagWidth,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(flagBorderRadius),
+                          borderRadius:
+                              BorderRadius.circular(widget.flagBorderRadius),
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image: NetworkImage(
-                              countryFlagApi + controller.selectedCountry.code,
+                              countryFlagApi + controller.selectedCountryCode,
                             ),
                           ),
                         ),
                       )
                     : const SizedBox(),
-                showName == true
+                widget.showName == true
                     ? Expanded(
                         child: Text(
-                          controller.selectedCountry.name,
-                          style: countryNameTextStyle,
+                          controller.selectedCountryName,
+                          style: widget.countryNameTextStyle,
                           overflow: TextOverflow.ellipsis,
                         ),
                       )
                     : const SizedBox(),
-                showPhoneCode == true
+                widget.showPhoneCode == true
                     ? Text(
-                        controller.selectedCountry.phoneCode,
-                        style: countryPhoneCodeTextStyle,
+                        controller.selectedCountryPhoneCode,
+                        style: widget.countryPhoneCodeTextStyle,
                       )
                     : const SizedBox(),
-                actionIcon,
+                widget.actionIcon,
               ],
             ),
           );

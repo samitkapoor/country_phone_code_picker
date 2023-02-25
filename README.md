@@ -16,6 +16,7 @@ Parameters for CountryPhoneCodePicker Widget
 
 |All you can set parameters|What they mean|Default|
 |:-------------------------:|:------------:|:-----:|
+|countryController|You need to pass the instance of the countryController|No Default Value|
 |defaultCountryCode|Allows you to set a default/initially selected country|Afghanistan|
 |height|Height of the picker widget|45|
 |width|Width of the picker widget |80|
@@ -96,12 +97,23 @@ or run this in your terminal<br>
 
 ## Usage
 
+Before starting the use of Country Code Picket widgets, you need to initialize the CountryController.
+Use the below function to initialize the CountryController 
+```dart
+initializeCountryController();
+```
+Make sure you initialize the CountryController before using  the widgets. A safe place to initialize would be just outside the MaterialApp!
 
+You can access the instance of the CountryController like this
+```dart
+CountryController countryController = getCountryController();
+```
 
 To simply get a Country Picker widget, try:
 
 ```dart
 CountryPhoneCodePicker.withDefaultSelectedCountry(
+  countryController: countryController,
   defaultCountryCode:
   Country(name: 'India', countryCode: 'IN', phoneCode: '+91'),
   borderRadius: 5,
@@ -128,9 +140,9 @@ CountryPhoneCodeWidget(
 To fetch details about the selected country, try:
 
 ```dart
-CountryController countryController = CountryController(); //Initialize the controller
+CountryController countryController = getCountryController(); //Get the instance of the controller
 print(countryController.selectedCountry);
-print(countryController.selectedCountryCode)
+print(countryController.selectedCountryCode);
 ```
 
 ## Additional information

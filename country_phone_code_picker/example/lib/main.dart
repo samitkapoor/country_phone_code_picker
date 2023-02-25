@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // It is important to initialize the countryController to use its values in the application later on!
+    // Just use this function below to initialize the countryController!
+    initializeCountryController();
     return MaterialApp(
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -20,11 +23,18 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
   @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
   Widget build(BuildContext context) {
+    // You need an instance of the countryController before you can use the countryController
+    CountryController countryController = getCountryController();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Country Phone Code Picker'),
@@ -35,6 +45,7 @@ class MyHomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CountryPhoneCodePicker.withDefaultSelectedCountry(
+                countryController: countryController,
                 defaultCountryCode:
                     Country(name: 'India', countryCode: 'IN', phoneCode: '+91'),
                 borderRadius: 5,
@@ -75,6 +86,9 @@ class MyHomePage extends StatelessWidget {
                 borderRadius: 5,
                 borderColor: Colors.black,
               ),
+              const SizedBox(height: 10),
+              // access the value of the countryController like this.
+              Text(countryController.selectedCountryCode)
             ],
           ),
         ),

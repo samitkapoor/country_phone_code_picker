@@ -30,9 +30,9 @@ CountryController initializeCountryController() {
 
   countryController.updateSelectedCountry(
     Country(
-      name: "India",
-      countryCode: "IN",
-      phoneCode: "+91",
+      name: "Afghanistan",
+      countryCode: "AF",
+      phoneCode: "+93",
     ),
   );
 

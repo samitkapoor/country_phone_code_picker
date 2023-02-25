@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 import 'package:country_phone_code_picker/constants/country_flag_image.dart';
@@ -20,10 +21,20 @@ class CountryController extends GetxController {
     selectedCountry = country;
     update();
   }
+
+  Country get getSelectedCountry => selectedCountry;
 }
 
 CountryController initializeCountryController() {
   CountryController countryController = Get.put(CountryController());
+
+  countryController.updateSelectedCountry(
+    Country(
+      name: "India",
+      countryCode: "IN",
+      phoneCode: "+91",
+    ),
+  );
 
   return countryController;
 }

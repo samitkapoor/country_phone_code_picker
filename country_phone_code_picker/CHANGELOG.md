@@ -53,3 +53,7 @@
 ## 0.0.41
 
 - Improved border radius to the flag image
+
+## 0.0.42
+
+- Added a way for user to access the properties of country controller.

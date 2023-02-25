@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 import 'package:country_phone_code_picker/constants/country_flag_image.dart';

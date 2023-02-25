@@ -57,3 +57,7 @@
 ## 0.0.42
 
 - Added a way for user to access the properties of country controller.
+
+## 0.0.43
+
+- Removed an unused import and changed the license to MIT

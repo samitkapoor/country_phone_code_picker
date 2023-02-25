@@ -117,7 +117,7 @@ class CountryPhoneCodePickerModalSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     searchBarInput = TextEditingController(text: searchBarInitialValue);
     SearchController searchController = Get.put(SearchController());
-    CountryController countryController = Get.find<CountryController>();
+    CountryController countryController = getCountryController();
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,

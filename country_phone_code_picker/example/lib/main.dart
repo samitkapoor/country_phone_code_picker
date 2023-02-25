@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    initializeCountryController();
     return MaterialApp(
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -25,6 +26,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    CountryController countryController = getCountryController();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Country Phone Code Picker'),
@@ -35,6 +37,7 @@ class MyHomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CountryPhoneCodePicker.withDefaultSelectedCountry(
+                countryController: countryController,
                 defaultCountryCode:
                     Country(name: 'India', countryCode: 'IN', phoneCode: '+91'),
                 borderRadius: 5,

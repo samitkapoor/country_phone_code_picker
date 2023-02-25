@@ -10,8 +10,10 @@ import 'package:country_phone_code_picker/constants/country_codes.dart';
 //the default dropdownwidget for picking the country code
 // ignore: must_be_immutable
 class CountryPhoneCodePicker extends StatelessWidget {
+  CountryController countryController;
   // ignore: use_key_in_widget_constructors
   CountryPhoneCodePicker({
+    required this.countryController,
     this.height = 45,
     this.width = 80,
     this.flagHeight = 30,
@@ -63,6 +65,7 @@ class CountryPhoneCodePicker extends StatelessWidget {
 
   // ignore: use_key_in_widget_constructors
   CountryPhoneCodePicker.withDefaultSelectedCountry({
+    required this.countryController,
     required this.defaultCountryCode,
     this.height = 45,
     this.width = 80,
@@ -242,7 +245,6 @@ class CountryPhoneCodePicker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    CountryController countryController = Get.put(CountryController());
     countryController.updateSelectedCountry(defaultCountryCode);
 
     return InkWell(

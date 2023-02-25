@@ -21,3 +21,15 @@ class CountryController extends GetxController {
     update();
   }
 }
+
+CountryController initializeCountryController() {
+  CountryController countryController = Get.put(CountryController());
+
+  return countryController;
+}
+
+CountryController getCountryController() {
+  CountryController countryController = Get.find<CountryController>();
+
+  return countryController;
+}
